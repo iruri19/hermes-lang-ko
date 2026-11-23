@@ -1,0 +1,56 @@
+# 한국어 덮어쓰기 (core: CLI / 메신저 / 게이트웨이)
+# 번들 ko.yaml에서 영어로 남아 있던 문구만 번역. 이 파일을 지우면 원래대로 돌아감.
+gateway:
+  model:
+    err_once_local: "이 세션에서는 `--once`를 사용할 수 없습니다. `/model <이름>`으로 바꾼 뒤 끝나면 다시 되돌리세요."
+    local_next_turn: "다음 메시지부터 적용됩니다."
+  usage_limit:
+    picker_title: "다른 모델로 계속하기:"
+    switch_choice: "{model}(으)로 전환 ({note})"
+  kanban:
+    wake:
+      completed: "완료됨"
+      gave_up: "포기함 (재시도 횟수 초과)"
+      crashed: "중단됨 (워커 종료), 디스패처가 다시 시도합니다"
+      timed_out: "시간 초과, 디스패처가 다시 시도합니다"
+      blocked: "막힘, 확인이 필요합니다"
+      review_requested: "검토를 위해 넘겨짐, 구현은 끝났습니다"
+      changes_requested: "검토에서 변경 요청됨 (BLOCK), 구현이 승인되지 않았습니다"
+      block_loop_detected: "반복적으로 막혀 분류(triage)로 보냄, 조율이 필요합니다"
+      status_default: "상태 변경됨"
+      handoff: "결과: {summary}"
+  status:
+    matrix_scope_room: "  방: {room}"
+  whoami:
+    scope_dm: "DM(개인 메시지)"
+cli:
+  voice:
+    state_listening: "듣는 중"
+    state_paused: "일시정지"
+    state_off: "꺼짐"
+    state_on: "켜짐"
+    state_yes: "예"
+  shared:
+    label_on_upper: "켜짐"
+    label_off_upper: "꺼짐"
+  commands:
+    shared:
+      state_on: "켜짐"
+      state_off: "꺼짐"
+    reasoning:
+      headline_on: "켜짐"
+      headline_off: "꺼짐"
+      headline_full: "전체"
+    fast:
+      feature_anthropic: "Anthropic 빠른 모드"
+      feature_openai: "우선 처리 (Priority Processing)"
+  session:
+    format_markdown: "마크다운"
+  status_bar:
+    vim_insert: "입력"
+    vim_replace: "바꾸기"
+    vim_normal: "일반"
+    voice_rec: "● 녹음"
+  config:
+    token_provider: "토큰 제공자"
+    key_cmd_token: "key_cmd 토큰 (명령)"
