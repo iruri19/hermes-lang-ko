@@ -32,6 +32,7 @@ Hermes에는 CLI와 TUI용 한국어 번역이 기본으로 들어 있습니다.
 
 ```bash
 hermes plugins install https://github.com/iruri19/hermes-lang-ko
+hermes plugins enable hermes-lang-ko
 hermes config set display.language ko
 hermes gateway restart
 ```
